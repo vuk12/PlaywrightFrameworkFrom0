@@ -1,0 +1,71 @@
+[ {
+  "uid" : "39c3aa932398913c",
+  "name" : "Basic Auth Test ",
+  "time" : {
+    "start" : 1640185350736,
+    "stop" : 1640185358273,
+    "duration" : 7537
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "29389b9d2a4e592d",
+  "name" : "Login with user name and password",
+  "time" : {
+    "start" : 1640185354639,
+    "stop" : 1640185360554,
+    "duration" : 5915
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a78d28e322207a7",
+  "name" : "basic test",
+  "time" : {
+    "start" : 1640185350877,
+    "stop" : 1640185354638,
+    "duration" : 3761
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5d2e300b30069f64",
+  "name" : "Check box select and check is selected",
+  "time" : {
+    "start" : 1640185350746,
+    "stop" : 1640185355848,
+    "duration" : 5102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "25cb1058aecd4fe8",
+  "name" : "Drop Down select and get selected text different site",
+  "time" : {
+    "start" : 1640185355925,
+    "stop" : 1640185360441,
+    "duration" : 4516
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e055224eb0dd707",
+  "name" : "Api Get Request Test ",
+  "time" : {
+    "start" : 1640185350728,
+    "stop" : 1640185350873,
+    "duration" : 145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf4b0b4461f1a2bd",
+  "name" : "Drop Down select and get selected text",
+  "time" : {
+    "start" : 1640185350750,
+    "stop" : 1640185355924,
+    "duration" : 5174
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
