@@ -1,8 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Dec 22 16:02:30 CET 2021","Wed Dec 22 16:02:30 CET 2021","145","chromium","api/apiNoAuth.spec.js","","","","Api Get Request Test ",""
-"passed","Wed Dec 22 16:02:35 CET 2021","Wed Dec 22 16:02:40 CET 2021","4516","chromium","smoke/dropDown.spec.js","","","","Drop Down select and get selected text different site",""
-"passed","Wed Dec 22 16:02:30 CET 2021","Wed Dec 22 16:02:34 CET 2021","3761","chromium","smoke/loginPage.spec.js","Tests from different sites","","","basic test",""
-"passed","Wed Dec 22 16:02:34 CET 2021","Wed Dec 22 16:02:40 CET 2021","5915","chromium","smoke/loginPage.spec.js","Tests from different sites","","","Login with user name and password",""
-"passed","Wed Dec 22 16:02:30 CET 2021","Wed Dec 22 16:02:38 CET 2021","7537","chromium","smoke/basicAuth.spec.js","","","","Basic Auth Test ",""
-"passed","Wed Dec 22 16:02:30 CET 2021","Wed Dec 22 16:02:35 CET 2021","5174","chromium","smoke/dropDown.spec.js","","","","Drop Down select and get selected text",""
-"passed","Wed Dec 22 16:02:30 CET 2021","Wed Dec 22 16:02:35 CET 2021","5102","chromium","smoke/checkBox.spec.js","","","","Check box select and check is selected",""

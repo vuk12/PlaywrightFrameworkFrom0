@@ -1,6 +1,5 @@
 import { test, expect, chromium} from '@playwright/test';
 import { BasePage } from '../../pom/BasePage';
-import {BaseAuthPage} from '../../pom/baseAuthPage'
 import { stringify } from 'querystring';
 
 test('Api Get Request Test ', async ({request}) => {
