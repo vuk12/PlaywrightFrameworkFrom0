@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-import { LoginPage } from "../../pom/LoginPage";
+import { LoginPage } from "../../pom/templateTestsPages/LoginPage";
 
 /*
 test('basic test', async ({ page }) => {

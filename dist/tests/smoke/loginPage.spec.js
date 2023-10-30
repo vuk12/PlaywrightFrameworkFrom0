@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const test_1 = require("@playwright/test");
-const LoginPage_1 = require("../../pom/LoginPage");
+const LoginPage_1 = require("../../pom/templateTestsPages/LoginPage");
 /*
 test('basic test', async ({ page }) => {
   await page.goto('https://playwright.dev/');

@@ -1,6 +1,6 @@
 import { test, expect, chromium} from '@playwright/test';
-import { BasePage } from '../../pom/BasePage';
-import {DropDownPage} from '../../pom/DropDownPage'
+import { BasePage } from '../../pom/templateTestsPages/BasePage';
+import {DropDownPage} from '../../pom/templateTestsPages/DropDownPage'
 import { delay } from '../../support/helpers';
 
 test('Drop Down select and get selected text', async ({page}) => {

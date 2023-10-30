@@ -11,8 +11,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const checkBoxFixture_1 = require("../../fixtures/checkBoxFixture");
 const test_1 = require("@playwright/test");
-const BasePage_1 = require("../../pom/BasePage");
-const CheckBoxPage_1 = require("../../pom/CheckBoxPage");
+const BasePage_1 = require("../../pom/templateTestsPages/BasePage");
+const CheckBoxPage_1 = require("../../pom/templateTestsPages/CheckBoxPage");
 (0, checkBoxFixture_1.test)('Check box select and check is selected', ({ page, optionNumber }) => __awaiter(void 0, void 0, void 0, function* () {
     yield page.goto('https://the-internet.herokuapp.com/');
     const basePage = new BasePage_1.BasePage(page);

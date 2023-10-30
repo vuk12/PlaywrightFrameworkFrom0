@@ -10,8 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const test_1 = require("@playwright/test");
-const BasePage_1 = require("../../pom/BasePage");
-const DropDownPage_1 = require("../../pom/DropDownPage");
+const BasePage_1 = require("../../pom/templateTestsPages/BasePage");
+const DropDownPage_1 = require("../../pom/templateTestsPages/DropDownPage");
 const helpers_1 = require("../../support/helpers");
 (0, test_1.test)('Drop Down select and get selected text', ({ page }) => __awaiter(void 0, void 0, void 0, function* () {
     yield page.goto('https://the-internet.herokuapp.com/');

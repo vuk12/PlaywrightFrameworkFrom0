@@ -7,6 +7,7 @@ export class ReleaseRequestTicket{
     public status:Locator;
     public version:Locator;
     public component:Locator;
+    public browseLink:Locator;
 
 
     constructor(page:Page)
@@ -15,6 +16,8 @@ export class ReleaseRequestTicket{
         this.status = page.locator('xpath=//span[@id="status-val"]/span');
         this.version = page.locator('xpath=//span[@id="fixVersions-field"]/a');
         this.component = page.locator('xpath=//span[@id="components-field"]/a');
+        this.browseLink = page.locator('id=attachment-browse-button');
+        
     }
 
     async getReleaseRequestStatusText ():Promise<string>{
@@ -27,5 +30,9 @@ export class ReleaseRequestTicket{
 
     async getComponentText ():Promise<string>{
         return this.component.innerText();
+    }
+
+    async clickBrowseLink ():Promise<void>{
+        await this.browseLink.click();
     }
 }

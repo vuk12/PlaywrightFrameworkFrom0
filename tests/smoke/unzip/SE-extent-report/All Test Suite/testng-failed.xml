@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.kindredgroup.seaffordabilitygateway.integrationtest.testnglisteners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="se-affordability-gateway-integration-test(failed)" verbose="0">
+    <classes>
+      <class name="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest">
+        <methods>
+          <include name="deleteAllUploadFiles"/>
+          <include name="setGlobalFilePath"/>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="triggerNetIncomeJobForNewCustomer" invocation-numbers="0"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextAfterTestMethod"/>
+        </methods>
+      </class> <!-- com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest -->
+    </classes>
+  </test> <!-- se-affordability-gateway-integration-test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

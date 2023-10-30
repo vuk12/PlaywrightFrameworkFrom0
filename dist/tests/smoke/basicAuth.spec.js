@@ -10,8 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const test_1 = require("@playwright/test");
-const BasePage_1 = require("../../pom/BasePage");
-const baseAuthPage_1 = require("../../pom/baseAuthPage");
+const BasePage_1 = require("../../pom/templateTestsPages/BasePage");
+const BaseAuthPage_1 = require("../../pom/templateTestsPages/BaseAuthPage");
 (0, test_1.test)('Basic Auth Test ', () => __awaiter(void 0, void 0, void 0, function* () {
     const browser = yield test_1.chromium.launch();
     const context = yield browser.newContext({
@@ -25,7 +25,7 @@ const baseAuthPage_1 = require("../../pom/baseAuthPage");
     yield page.goto('https://the-internet.herokuapp.com/');
     const basePage = new BasePage_1.BasePage(page);
     yield basePage.clickBasicAuthLink();
-    const baseAuthPage = new baseAuthPage_1.BaseAuthPage(page);
+    const baseAuthPage = new BaseAuthPage_1.BaseAuthPage(page);
     const num = yield baseAuthPage.basicAuthHeaderText.count();
     console.log(num);
     yield (0, test_1.expect)(baseAuthPage.basicAuthHeaderText).toHaveCount(1);

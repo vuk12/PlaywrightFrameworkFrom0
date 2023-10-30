@@ -1,7 +1,7 @@
 import {test} from "../../fixtures/checkBoxFixture"
 import { expect, chromium} from '@playwright/test';
-import { BasePage } from '../../pom/BasePage';
-import {CheckBoxPage} from '../../pom/CheckBoxPage'
+import { BasePage } from '../../pom/templateTestsPages/BasePage';
+import {CheckBoxPage} from '../../pom/templateTestsPages/CheckBoxPage'
 
 test('Check box select and check is selected', async ({page, optionNumber}) => {
 

@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-skipped">All Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods,  1 skipped,  15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods skipped suite-All_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods skipped suite-All_Test_Suite"> (show)</a> <!-- show-methods skipped suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-All_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="triggerNetIncomeJobForNewCustomer(24001, 20, true)">triggerNetIncomeJobForNewCustomer(24001, 20, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-All_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest" class="method navigator-link" hash-for-method="deleteAllZipFilesTest">deleteAllZipFilesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest" class="method navigator-link" hash-for-method="getAllZipFilesTest">getAllZipFilesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest" class="method navigator-link" hash-for-method="readFileTest">readFileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest" class="method navigator-link" hash-for-method="testNetIncomes">testNetIncomes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="tiLastDateIsCurrentDate">tiLastDateIsCurrentDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="triggerNetIncomeJobForNewCustomer(24001, 20, true)">triggerNetIncomeJobForNewCustomer(24001, 20, true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="triggerNetIncomeJobForNewCustomer(24100, 19, false)">triggerNetIncomeJobForNewCustomer(24100, 19, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="triggerNetIncomeJobForNewCustomer(24000, 21, false)">triggerNetIncomeJobForNewCustomer(24000, 21, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest" class="method navigator-link" hash-for-method="triggerNetIncomeJobForNewCustomer(23999, 19, false)">triggerNetIncomeJobForNewCustomer(23999, 19, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest" class="method navigator-link" hash-for-method="uploadCsvZipFileAndGetErrorMessageTest">uploadCsvZipFileAndGetErrorMessageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest" class="method navigator-link" hash-for-method="uploadFileTest">uploadFileTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest" class="method navigator-link" hash-for-method="uploadFileWithWrongNumOfColumns">uploadFileWithWrongNumOfColumns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest" class="method navigator-link" hash-for-method="uploadZipFileWithTwoTxtFiles">uploadZipFileWithTwoTxtFiles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest" class="method navigator-link" hash-for-method="uploadZipFileWithWrongColumnName">uploadZipFileWithWrongColumnName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest" class="method navigator-link" hash-for-method="verifyErasure">verifyErasure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNetIncomeJobForNewCustomer(24001, 20, true)">
+                  </a> <!-- triggerNetIncomeJobForNewCustomer(24001, 20, true) -->
+                  <span class="method-name">triggerNetIncomeJobForNewCustomer</span>
+                  <span class="parameters">(24001, 20, true)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;java.math.BigDecimal.toString()&quot; because the return value of &quot;com.kindredgroup.seaffordabilitygateway.integrationtest.dao.data.AffordabilityData.getNetIncome()&quot; is null
+	at com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.triggerNetIncomeJobForNewCustomer(RegisteredUsersInFileTest.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:239)
+	at org.springframework.test.context.testng.AbstractTestNGSpringContextTests.run(AbstractTestNGSpringContextTests.java:184)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:253)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:594)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Register SE customer with age from provider and upload file. Then deposit money, read the file and trigger netIncome job. Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-skipped -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tiLastDateIsCurrentDate">
+                  </a> <!-- tiLastDateIsCurrentDate -->
+                  <span class="method-name">tiLastDateIsCurrentDate</span>
+                  <em>
+(Register 25+ years old SE customer and upload file. Then deposit 25000 SEK, read the file and trigger netIncome job.Update Net income and set Last TI check to be older then 365 days. Trigger net income job again.  Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNetIncomeJobForNewCustomer(24001, 20, true)">
+                  </a> <!-- triggerNetIncomeJobForNewCustomer(24001, 20, true) -->
+                  <span class="method-name">triggerNetIncomeJobForNewCustomer</span>
+                  <span class="parameters">(24001, 20, true)</span>
+                  <em>
+(Register SE customer with age from provider and upload file. Then deposit money, read the file and trigger netIncome job. Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNetIncomeJobForNewCustomer(24100, 19, false)">
+                  </a> <!-- triggerNetIncomeJobForNewCustomer(24100, 19, false) -->
+                  <span class="method-name">triggerNetIncomeJobForNewCustomer</span>
+                  <span class="parameters">(24100, 19, false)</span>
+                  <em>
+(Register SE customer with age from provider and upload file. Then deposit money, read the file and trigger netIncome job. Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNetIncomeJobForNewCustomer(24000, 21, false)">
+                  </a> <!-- triggerNetIncomeJobForNewCustomer(24000, 21, false) -->
+                  <span class="method-name">triggerNetIncomeJobForNewCustomer</span>
+                  <span class="parameters">(24000, 21, false)</span>
+                  <em>
+(Register SE customer with age from provider and upload file. Then deposit money, read the file and trigger netIncome job. Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNetIncomeJobForNewCustomer(23999, 19, false)">
+                  </a> <!-- triggerNetIncomeJobForNewCustomer(23999, 19, false) -->
+                  <span class="method-name">triggerNetIncomeJobForNewCustomer</span>
+                  <span class="parameters">(23999, 19, false)</span>
+                  <em>
+(Register SE customer with age from provider and upload file. Then deposit money, read the file and trigger netIncome job. Expected result: Net income and Last TI check have appropriate values in DB)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyErasure">
+                  </a> <!-- verifyErasure -->
+                  <span class="method-name">verifyErasure</span>
+                  <em>
+(Create customer, customer is present in se-gateway DB. Erase customer. Expected result: customer not exist in se-gateway DB after erasure)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="readFileTest">
+                  </a> <!-- readFileTest -->
+                  <span class="method-name">readFileTest</span>
+                  <em>
+(Register SE customer and upload file for that customer.Start reading file Expected result: Reading from file is performed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNetIncomes">
+                  </a> <!-- testNetIncomes -->
+                  <span class="method-name">testNetIncomes</span>
+                  <em>
+(Register SE customer and upload file for that customer.Start reading file and get net income Expected result: Appropriate net income is displayed)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAllZipFilesTest">
+                  </a> <!-- deleteAllZipFilesTest -->
+                  <span class="method-name">deleteAllZipFilesTest</span>
+                  <em>
+(Delete all zip files Expected result: All uploaded zip files are deleted)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAllZipFilesTest">
+                  </a> <!-- getAllZipFilesTest -->
+                  <span class="method-name">getAllZipFilesTest</span>
+                  <em>
+(Upload zip file. Get all present zip files Expected result: All uploaded zip files are present)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadFileTest">
+                  </a> <!-- uploadFileTest -->
+                  <span class="method-name">uploadFileTest</span>
+                  <em>
+(Upload zip file  Expected result: File is uploaded)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadCsvZipFileAndGetErrorMessageTest">
+                  </a> <!-- uploadCsvZipFileAndGetErrorMessageTest -->
+                  <span class="method-name">uploadCsvZipFileAndGetErrorMessageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadFileWithWrongNumOfColumns">
+                  </a> <!-- uploadFileWithWrongNumOfColumns -->
+                  <span class="method-name">uploadFileWithWrongNumOfColumns</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadZipFileWithTwoTxtFiles">
+                  </a> <!-- uploadZipFileWithTwoTxtFiles -->
+                  <span class="method-name">uploadZipFileWithTwoTxtFiles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadZipFileWithWrongColumnName">
+                  </a> <!-- uploadZipFileWithWrongColumnName -->
+                  <span class="method-name">uploadZipFileWithWrongColumnName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/jenkins/workspace/integration-tests/qa1/se-affordability-gateway/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.kindredgroup.seaffordabilitygateway.integrationtest.testnglisteners.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;se-affordability-gateway-integration-test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest&quot;/&gt;
+      &lt;class name=&quot;com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest&quot;/&gt;
+      &lt;class name=&quot;com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest&quot;/&gt;
+      &lt;class name=&quot;com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest&quot;/&gt;
+      &lt;class name=&quot;com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- se-affordability-gateway-integration-test --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">se-affordability-gateway-integration-test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyErasure')
+data.setCell(0, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest')
+data.setCell(0, 3, 3022);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tiLastDateIsCurrentDate')
+data.setCell(1, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(1, 3, 2220);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'triggerNetIncomeJobForNewCustomer')
+data.setCell(2, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(2, 3, 1396);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'triggerNetIncomeJobForNewCustomer')
+data.setCell(3, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(3, 3, 1390);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'triggerNetIncomeJobForNewCustomer')
+data.setCell(4, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(4, 3, 1354);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'triggerNetIncomeJobForNewCustomer')
+data.setCell(5, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(5, 3, 1352);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'triggerNetIncomeJobForNewCustomer')
+data.setCell(6, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest')
+data.setCell(6, 3, 1332);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testNetIncomes')
+data.setCell(7, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest')
+data.setCell(7, 3, 1002);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'readFileTest')
+data.setCell(8, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest')
+data.setCell(8, 3, 865);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getAllZipFilesTest')
+data.setCell(9, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest')
+data.setCell(9, 3, 101);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'uploadFileWithWrongNumOfColumns')
+data.setCell(10, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest')
+data.setCell(10, 3, 95);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'uploadZipFileWithTwoTxtFiles')
+data.setCell(11, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest')
+data.setCell(11, 3, 90);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'uploadZipFileWithWrongColumnName')
+data.setCell(12, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest')
+data.setCell(12, 3, 90);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'uploadCsvZipFileAndGetErrorMessageTest')
+data.setCell(13, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest')
+data.setCell(13, 3, 63);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'uploadFileTest')
+data.setCell(14, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest')
+data.setCell(14, 3, 8);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteAllZipFilesTest')
+data.setCell(15, 2, 'com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest')
+data.setCell(15, 3, 6);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">yearlyLossLimitIs50PercentOfYearlyIncome</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">8 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(void com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest.verifyErasure())</span>
+                <span class="method-start">2973 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyErasure</span>
+                <span class="method-start">2976 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">2976 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">6235 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(void com.kindredgroup.seaffordabiltiygateway.integrationtest.ErasureTest.verifyErasure())</span>
+                <span class="method-start">6322 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">6324 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">6326 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">6326 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">deleteAllZipFilesTest</span>
+                <span class="method-start">6330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">6330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.deleteAllZipFilesTest())</span>
+                <span class="method-start">6330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">6354 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.deleteAllZipFilesTest())</span>
+                <span class="method-start">6359 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">getAllZipFilesTest</span>
+                <span class="method-start">6360 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.getAllZipFilesTest())</span>
+                <span class="method-start">6360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">6360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">6478 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.getAllZipFilesTest())</span>
+                <span class="method-start">6482 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.uploadFileTest())</span>
+                <span class="method-start">6483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadFileTest</span>
+                <span class="method-start">6484 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">6484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">6524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.FileTest.uploadFileTest())</span>
+                <span class="method-start">6528 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">6529 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">6530 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">6530 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest.readFileTest())</span>
+                <span class="method-start">6533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">readFileTest</span>
+                <span class="method-start">6533 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">6533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">7416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest.readFileTest())</span>
+                <span class="method-start">7420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest.testNetIncomes())</span>
+                <span class="method-start">7421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNetIncomes</span>
+                <span class="method-start">7421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">7421 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">8443 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest.testNetIncomes())</span>
+                <span class="method-start">8448 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">8449 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.ReaderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">8449 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">8450 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">8452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadCsvZipFileAndGetErrorMessageTest</span>
+                <span class="method-start">8452 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadCsvZipFil...)</span>
+                <span class="method-start">8452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">8535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadCsvZipFil...)</span>
+                <span class="method-start">8539 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">uploadFileWithWrongNumOfColumns</span>
+                <span class="method-start">8540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadFileWithW...)</span>
+                <span class="method-start">8540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">8540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">8656 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadFileWithW...)</span>
+                <span class="method-start">8661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadZipFileWi...)</span>
+                <span class="method-start">8662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">8662 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadZipFileWithTwoTxtFiles</span>
+                <span class="method-start">8662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">8778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadZipFileWi...)</span>
+                <span class="method-start">8782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadZipFileWi...)</span>
+                <span class="method-start">8783 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadZipFileWithWrongColumnName</span>
+                <span class="method-start">8784 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">8784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">8895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">8899 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.NegativeFileTest.uploadZipFileWi...)</span>
+                <span class="method-start">8899 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">8900 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">8900 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.tiLast...)</span>
+                <span class="method-start">8902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tiLastDateIsCurrentDate</span>
+                <span class="method-start">8903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">8903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">11143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.tiLast...)</span>
+                <span class="method-start">11150 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">11154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">11155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNetIncomeJobForNewCustomer(24001, 20, true)</span>
+                <span class="method-start">11155 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">12546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">12550 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">12551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">12551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNetIncomeJobForNewCustomer(24001, 20, true)</span>
+                <span class="method-start">12551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">13975 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">13978 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">13979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNetIncomeJobForNewCustomer(24100, 19, false)</span>
+                <span class="method-start">13979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">13979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">15334 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">15337 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">15338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">15338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNetIncomeJobForNewCustomer(24000, 21, false)</span>
+                <span class="method-start">15338 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">16720 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">16724 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">16725 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setGlobalFilePath</span>
+                <span class="method-start">16726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNetIncomeJobForNewCustomer(23999, 19, false)</span>
+                <span class="method-start">16726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">deleteAllUploadFiles</span>
+                <span class="method-start">18102 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.kindredgroup.seaffordabiltiygateway.integrationtest.RegisteredUsersInFileTest.trigge...)</span>
+                <span class="method-start">18106 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">18107 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

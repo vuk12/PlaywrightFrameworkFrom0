@@ -43,6 +43,7 @@ const config = {
         headless: false,
         viewport: { width: 1280, height: 720 },
         ignoreHTTPSErrors: true,
+        channel: "chrome",
         video: 'on-first-retry'
         //The maximum number of retry attempts per test.
     },

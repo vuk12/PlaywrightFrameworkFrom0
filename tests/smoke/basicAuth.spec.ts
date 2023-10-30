@@ -1,6 +1,6 @@
 import { test, expect, chromium} from '@playwright/test';
-import { BasePage } from '../../pom/BasePage';
-import {BaseAuthPage} from '../../pom/BaseAuthPage'
+import { BasePage } from '../../pom/templateTestsPages/BasePage';
+import {BaseAuthPage} from '../../pom/templateTestsPages/BaseAuthPage'
 
 test('Basic Auth Test ', async () => {
 
