@@ -8,7 +8,7 @@
       testDir: './tests',
 
       /* Maximum time one test can run for. */
-      timeout: 30 * 1000,
+      timeout: 3000 * 1000,
 
       expect: {
 
@@ -16,7 +16,7 @@
          * Maximum time expect() should wait for the condition to be met.
          * For example in `await expect(locator).toHaveText();`
          */
-        timeout: 5000
+        timeout: 500000
       },
 
       /* Fail the build on CI if you accidentally left test.only in the source code. */

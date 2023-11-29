@@ -17,11 +17,14 @@ const DeploymentPage_1 = require("../../pom/DeploymentPage");
 const KubernetesPage_1 = require("../../pom/KubernetesPage");
 const HandleDeployments_1 = require("../../support/HandleDeployments");
 const JenkinsPage_1 = require("../../pom/JenkinsPage");
-test_1.test.describe("Kindred Jira with Login", () => {
+const fs_extra_1 = require("fs-extra");
+const extract = require('extract-zip');
+const JIRA_TICKET_LINK = 'https://jira.kindredgroup.com/browse/KCI-1053';
+test_1.test.describe("For Kindred Jira with Login ticket", () => {
     (0, test_1.test)("Navigate to Release Request ticket", ({ page }) => __awaiter(void 0, void 0, void 0, function* () {
         // var versionPrefix:string = 'version: ' 
         yield test_1.test.step("Navigate to Url", () => __awaiter(void 0, void 0, void 0, function* () {
-            yield page.goto("https://jira.kindredgroup.com/browse/KCI-1012");
+            yield page.goto(JIRA_TICKET_LINK);
         }));
         yield test_1.test.step("Login into Jira", () => __awaiter(void 0, void 0, void 0, function* () {
             const loginPage = new KindredLoginPage_1.KindredLoginPage(page);
@@ -48,6 +51,40 @@ test_1.test.describe("Kindred Jira with Login", () => {
                     var isDeployed = yield kubePage.isSameVersion(version);
                     if (isDeployed === true) {
                         yield page.goto(helpers_1.serviceMapLinks.get(component).jenkinsLink);
+                        const jenkinsPage = new JenkinsPage_1.JenkinsPage(page);
+                        yield jenkinsPage.clickBuildNow();
+                        yield jenkinsPage.progressBarNotPresent();
+                        const version = yield jenkinsPage.getlastVersionBuild();
+                        if ((yield jenkinsPage.getBuildStatus()).includes('Success')) {
+                            yield jenkinsPage.clickLastBuildIcon();
+                            yield jenkinsPage.clickReportLink();
+                            const downloadPromise = page.waitForEvent('download');
+                            yield jenkinsPage.clickZipLink();
+                            const download = yield downloadPromise;
+                            (0, helpers_1.delay)(2000); //who know how long it takes
+                            // const randomFileName = generateString(4)
+                            const fullFilePath = __dirname + download.suggestedFilename();
+                            console.log(fullFilePath);
+                            yield download.saveAs(fullFilePath);
+                            try {
+                                const destinationPath = __dirname + '/unzip';
+                                yield extract(fullFilePath, { dir: destinationPath });
+                                console.log('Extraction complete');
+                                yield page.goto(JIRA_TICKET_LINK);
+                                const fileChooserPromise = page.waitForEvent('filechooser');
+                                const rrTicket = new ReleaseRequestTicket_1.ReleaseRequestTicket(page);
+                                yield rrTicket.clickBrowseLink();
+                                const fileChooser = yield fileChooserPromise;
+                                yield fileChooser.setFiles(destinationPath + '/SE-extent-report/emailable-report.html');
+                                (0, fs_extra_1.removeSync)(destinationPath);
+                            }
+                            catch (err) {
+                                console.log('Da nije mozda');
+                            }
+                        }
+                        yield (0, helpers_1.delay)(3000);
+                        yield page.goto("https://b92.net");
+                        yield (0, helpers_1.delay)(3000);
                     }
                     // page.on('dialog',async dialog => {
                     //   expect(dialog.type()).toContain('dialog')
@@ -57,7 +94,7 @@ test_1.test.describe("Kindred Jira with Login", () => {
             }
         }));
     }));
-    (0, test_1.test)("Wait for version to be deployed on Kubernetes", ({ page }) => __awaiter(void 0, void 0, void 0, function* () {
+    (0, test_1.test)("Wait forr version to be deployedasda asd Kubernetes", ({ page }) => __awaiter(void 0, void 0, void 0, function* () {
         var versionToDeploy = '0.0.84';
         yield test_1.test.step("Navigate to Url", () => __awaiter(void 0, void 0, void 0, function* () {
             yield page.goto("https://k8s-console.pipeline.aws.kindredgroup.com/pods?labelSelector=app.kubernetes.io%2Finstance%3Daffordability-intervention-service,app.kubernetes.io%2Fname%3Dkindred-affordability-intervention-service&namespace=affordability-intervention-service&appName=affordability-intervention-service&deploymentName=kindred-affordability-intervention-service&clusterServer=k8s.si1.kindredgroup.com");
@@ -69,19 +106,6 @@ test_1.test.describe("Kindred Jira with Login", () => {
             if (isDeployed === true) {
                 yield page.goto("https://kci-jenkins.pipeline.aws.kindredgroup.com/job/integration-tests/job/qa1/job/affordability-intervention-service/");
             }
-            yield (0, helpers_1.delay)(3000);
-        }));
-    }));
-    (0, test_1.test)("Wait for version to be deployed on Kubernetes", ({ page }) => __awaiter(void 0, void 0, void 0, function* () {
-        yield test_1.test.step("Navigate to Url", () => __awaiter(void 0, void 0, void 0, function* () {
-            yield page.goto("https://kci-jenkins.pipeline.aws.kindredgroup.com/job/integration-tests/job/qa1/job/se-affordability-gateway/");
-        }));
-        yield test_1.test.step("Check version", () => __awaiter(void 0, void 0, void 0, function* () {
-            const jenkinsPage = new JenkinsPage_1.JenkinsPage(page);
-            yield jenkinsPage.clickBuildNow();
-            yield jenkinsPage.progressBarNotPresent();
-            const version = yield jenkinsPage.getlastVersionBuild();
-            yield page.goto("https://b92.net");
             yield (0, helpers_1.delay)(3000);
         }));
     }));

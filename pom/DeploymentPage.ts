@@ -86,6 +86,7 @@ export class DeploymentPage{
     }
 
     async waitForAutoMergeToComplete(commitMessage:string):Promise<void>{
+        await delay(2000)
         await this.clickAutoMergebutton()
         await this.setCommitMessage(commitMessage)
         await this.clickCreateButton()

@@ -10,6 +10,8 @@ export class JenkinsPage{
     private progressBar:Locator;
     private reportLink:Locator;
     private zipLink:Locator;
+    private kmsZipLink:Locator;
+
 
 
     constructor(page:Page)
@@ -20,6 +22,7 @@ export class JenkinsPage{
         this.progressBar= page.locator('css=td.progress-bar-left');
         this.reportLink = page.locator('xpath=//span[contains(text(),"report")]/ancestor::span')  
         this.zipLink = page.locator('id=zip_link')  
+        this.kmsZipLink = page.locator('xpath=//table[@class="fileList"]')  
     }
 
     async clickBuildNow ():Promise<void>{
@@ -53,4 +56,13 @@ export class JenkinsPage{
     async clickZipLink ():Promise<void>{
         await  this.zipLink.click()
     }
+
+    async clickKmsZipLink ():Promise<void>{
+        await  this.kmsZipLink.click()
+    }
+
+    async getKmsFileName ():Promise<string>{
+        return await  this.page.locator('xpath= //table[@class="fileList"]//td[2]/a').innerText();
+    }
+   
 }

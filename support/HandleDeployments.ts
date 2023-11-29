@@ -13,6 +13,6 @@ export class HandleDeployments{
         await deploymentPage.clickCommits()
         await delay(1000)
         await deploymentPage.waitForAutoMergeToComplete('[Auto] Update version to: '.concat(version))
-        await delay(2000)
+        await delay(1000)
     }
 }

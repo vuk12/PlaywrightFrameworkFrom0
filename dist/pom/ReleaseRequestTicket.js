@@ -16,6 +16,7 @@ class ReleaseRequestTicket {
         this.status = page.locator('xpath=//span[@id="status-val"]/span');
         this.version = page.locator('xpath=//span[@id="fixVersions-field"]/a');
         this.component = page.locator('xpath=//span[@id="components-field"]/a');
+        this.browseLink = page.locator('id=attachment-browse-button');
     }
     getReleaseRequestStatusText() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -30,6 +31,11 @@ class ReleaseRequestTicket {
     getComponentText() {
         return __awaiter(this, void 0, void 0, function* () {
             return this.component.innerText();
+        });
+    }
+    clickBrowseLink() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.browseLink.click();
         });
     }
 }

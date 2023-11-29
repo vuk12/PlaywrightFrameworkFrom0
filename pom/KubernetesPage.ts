@@ -16,7 +16,6 @@ export class KubernetesPage{
         this.closeDialog = page.locator('//span[@class="pi pi-times"]');
         this.table = page.locator('xpath=//div[@class="ui-table-wrapper ng-star-inserted"]');
         this.tableBody = page.locator('xpath=//tbody[@class="ui-table-tbody"]');
-
     }
 
     async clickCloseDialog ():Promise<void>{
@@ -48,7 +47,9 @@ export class KubernetesPage{
         var watchDog = 0;
         while(!same && watchDog<20){
             delay(30000)
-            this.page.reload()
+            await this.page.reload()
+            await this.clickCloseDialog();
+
             var listOfVersions : string[]=await this.getAllVersionRowText();
             if(listOfVersions.length>0 && listOfVersions[0]===versionToDeploy)
             {

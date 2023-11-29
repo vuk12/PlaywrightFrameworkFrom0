@@ -17,6 +17,8 @@ class JenkinsPage {
         this.buildNow = page.locator('xpath=//span[text()="Build Now"]');
         this.buildresultTable = page.locator('xpath=//table[@class="pane jenkins-pane stripped"]/tbody');
         this.progressBar = page.locator('css=td.progress-bar-left');
+        this.reportLink = page.locator('xpath=//span[contains(text(),"report")]/ancestor::span');
+        this.zipLink = page.locator('id=zip_link');
     }
     clickBuildNow() {
         return __awaiter(this, void 0, void 0, function* () {
@@ -35,6 +37,26 @@ class JenkinsPage {
             yield this.progressBar.waitFor({ state: 'detached', timeout: 360000 });
             //sometimes needs time and time to get build into tabele at the first place
             yield (0, helpers_1.delay)(6000);
+        });
+    }
+    clickLastBuildIcon() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.buildresultTable.locator('xpath=//tr[2]//div[@class="build-icon"]').click();
+        });
+    }
+    getBuildStatus() {
+        return __awaiter(this, void 0, void 0, function* () {
+            return yield this.buildresultTable.locator('xpath=//tr[2]//div[@class="build-icon"]/a').getAttribute('title');
+        });
+    }
+    clickReportLink() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.reportLink.click();
+        });
+    }
+    clickZipLink() {
+        return __awaiter(this, void 0, void 0, function* () {
+            yield this.zipLink.click();
         });
     }
 }
